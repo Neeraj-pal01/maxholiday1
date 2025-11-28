@@ -15,9 +15,7 @@ import MyProfile from './pages/user/Myrpofile';
 import MyCourse from './pages/user/MyCourse';
 import MyJob from './pages/user/MyJob';
 import Header from './components/Header';
-import Projects from './pages/project/Projects.jsx';
-import Skills from './pages/skill/Skills.jsx';
-import ExperienceEducation from './pages/experience/ExperienceEducation.jsx';
+
 
 
 const App = () => {
@@ -30,9 +28,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/skills" element={<Skills/>} />
-        <Route path="/projects" element={<Projects/>} />
-        <Route path="/experience" element={<ExperienceEducation/>} />
+        
         
          {/* Auth */}
         <Route path="/login" element={<Login />} />

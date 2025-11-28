@@ -1,111 +1,197 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+  FaYoutube,
+  FaPinterestP,
+} from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-gradient-to-br from-white via-gray-50 to-teal-50 text-gray-700 border-t border-gray-200 shadow-inner py-16 px-6 md:px-12">
-      {/* Decorative gradient circles */}
-      <div className="absolute top-0 left-0 w-64 h-64 bg-teal-100/40 rounded-full blur-3xl opacity-60 animate-pulse"></div>
-      <div className="absolute bottom-0 right-0 w-64 h-64 bg-teal-200/40 rounded-full blur-3xl opacity-60 animate-pulse"></div>
+    <footer className="bg-white text-gray-700 border-t mt-20">
+      
+      {/* TOP SECTION */}
+      <div className="max-w-7xl mx-auto px-6 py-14 grid md:grid-cols-4 gap-10">
+        
+        {/* Company Info */}
+        <div>
+          <img src="/logo.png" alt="Max Holidays" className="w-40 mb-4" />
 
-      {/* Main Footer Grid */}
-      <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
-        {/* 🟢 Brand / About Section */}
-        <div className="space-y-4">
-          <div className="flex items-center justify-center md:justify-start gap-3">
-            <img
-              src="/Images/subhash.png" // ✅ Update your logo path here
-              alt="Subhash Logo"
-              className="w-14 h-14 rounded-full border-2 border-teal-500 shadow-md hover:scale-110 transition-transform duration-300"
-            />
-            <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight">
-              Subhash <span className="text-teal-500">Nigam</span>
-            </h2>
-          </div>
-
-          <div className="h-1 w-16 bg-gradient-to-r from-teal-500 to-transparent mx-auto md:mx-0 rounded-full mb-4"></div>
-
-          <p className="text-gray-600 text-sm leading-relaxed">
-            I’m a passionate <span className="text-teal-500 font-semibold">Full Stack Developer</span> building fast, modern, and scalable web applications using{" "}
-            <span className="text-teal-500 font-semibold">React.js</span>,{" "}
-            <span className="text-teal-500 font-semibold">Node.js</span>, and{" "}
-            <span className="text-teal-500 font-semibold">Tailwind CSS</span>.
+          <p className="text-sm leading-6 text-gray-600">
+            <strong className="text-teal-600 font-bold text-md">Max Holidays India Pvt. Ltd.</strong>
+            <br />
+            301, HB Twin Tower,
+            <br />
+            Netaji Subhash Place,
+            <br />
+            Pitam Pura, New Delhi 110034
           </p>
+
+          <p className="mt-4 text-sm leading-6 text-gray-600">
+            <span className="font-bold text-teal-600">Landline :</span> 011 45026500
+            <br />
+            <span className="font-bold text-teal-600">Whatsapp :</span> +91 8800740030
+            <br />
+            <span className="font-bold text-teal-600">Email :</span> tours@maxholidays.com
+            <br />
+            <span className="font-bold text-teal-600">Support :</span> support@maxholidays.com
+            <br />
+            <span className="font-bold text-teal-600">Skype :</span> max.holidays
+          </p>
+
+          {/* Social icons */}
+          <div className="flex gap-4 mt-4 text-xl text-gray-600">
+            {[
+              { Icon: FaFacebookF, color: "hover:text-blue-600" },
+              { Icon: FaInstagram, color: "hover:text-pink-600" },
+              { Icon: FaLinkedinIn, color: "hover:text-blue-700" },
+              { Icon: FaTwitter, color: "hover:text-blue-500" },
+              { Icon: FaYoutube, color: "hover:text-red-600" },
+              { Icon: FaPinterestP, color: "hover:text-red-500" },
+            ].map(({ Icon, color }) => (
+              <Icon key={color} className={`${color} cursor-pointer transition`} />
+            ))}
+          </div>
         </div>
 
-        {/* 🟢 Quick Links Section */}
+        {/* Company Links */}
         <div>
-          <h3 className="text-xl font-semibold text-gray-900 mb-4 relative inline-block after:content-[''] after:block after:w-10 after:h-[3px] after:bg-teal-500 after:mt-2 after:rounded-full mx-auto md:mx-0">
-            Quick Links
-          </h3>
-          <ul className="space-y-2 text-gray-600 text-sm">
+          <h3 className="font-bold text-xl mb-4 text-teal-600">Company</h3>
+          <ul className="space-y-2 text-sm">
             {[
-              { label: "Home", to: "/" },
-              { label: "About", to: "/about" },
-              { label: "Skills", to: "/skills" },
-              { label: "Experience", to: "/experience" }, // ✅ New Page Added Here
-              { label: "Projects", to: "/projects" },
-              { label: "Contact", to: "/contact" },
-            ].map((link, i) => (
-              <li key={i}>
+              ["About Us", "/about"],
+              ["Corporate Profile", "/corporate-profile"],
+              ["Our Founder", "/founder"],
+              ["Why Us", "/why-us"],
+              ["Max Blog", "/blog"],
+              ["Travel Tips", "/travel-tips"],
+              ["Brochures", "/brochures"],
+              ["Contact Us", "/contact"],
+            ].map(([label, link]) => (
+              <li key={link}>
                 <Link
-                  to={link.to}
-                  className="hover:text-teal-500 transition-colors duration-300 flex items-center justify-center md:justify-start gap-2 group"
+                  to={link}
+                  className="hover:text-teal-600 transition font-medium"
                 >
-                  <span className="w-2 h-2 bg-teal-500 rounded-full opacity-0 group-hover:opacity-100 transition-all"></span>
-                  {link.label}
+                  {label}
                 </Link>
               </li>
             ))}
           </ul>
         </div>
 
-        {/* 🟢 Social Links Section */}
+        {/* Services */}
         <div>
-          <h3 className="text-xl font-semibold text-gray-900 mb-4 relative inline-block after:content-[''] after:block after:w-10 after:h-[3px] after:bg-teal-500 after:mt-2 after:rounded-full mx-auto md:mx-0">
-            Connect With Me
-          </h3>
-          <p className="text-gray-600 text-sm mb-4">
-            Let’s collaborate or connect through my social handles below.
-          </p>
-          <div className="flex justify-center md:justify-start gap-6 text-3xl">
-            <a
-              href="https://github.com/subhash-kumar-nigam"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-teal-500 transition-transform transform hover:scale-110 hover:-translate-y-1"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://linkedin.com/in/subhash-nigam-82398924a"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-teal-500 transition-transform transform hover:scale-110 hover:-translate-y-1"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href="mailto:nigamsubhash123456@gmail.com"
-              className="text-gray-600 hover:text-teal-500 transition-transform transform hover:scale-110 hover:-translate-y-1"
-            >
-              <FaEnvelope />
-            </a>
+          <h3 className="font-bold text-xl mb-4 text-teal-600">Services</h3>
+          <ul className="space-y-2 text-sm">
+            {[
+              ["India Travel Guide", "/india-travel-guide"],
+              ["Our Destinations", "/destinations"],
+              ["Tour Packages", "/tour-packages"],
+              ["Escorted Group Tours", "/group-tours"],
+              ["Ways to Travel", "/ways-to-travel"],
+              ["Special Interest Tours", "/special-interest-tours"],
+              ["Business Travel Services", "/business-travel"],
+              ["Responsible Tourism", "/responsible-tourism"],
+              ["Responsible Business", "/responsible-business"],
+            ].map(([label, link]) => (
+              <li key={link}>
+                <Link
+                  to={link}
+                  className="hover:text-teal-600 transition font-medium"
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Max For You */}
+        <div>
+          <h3 className="font-bold text-xl mb-4 text-teal-600">Max For You</h3>
+          <ul className="space-y-2 text-sm">
+            {[
+              ["FAQs", "/faqs"],
+              ["Deal & Offers", "/deals"],
+              ["Loyalty Rewards", "/loyalty"],
+              ["Testimonial", "/testimonials"],
+              ["Booking Conditions", "/booking-conditions"],
+              ["Terms of Services", "/terms"],
+              ["Payments", "/payments"],
+              ["Enquiry Form", "/enquiry"],
+            ].map(([label, link]) => (
+              <li key={link}>
+                <Link
+                  to={link}
+                  className="hover:text-teal-600 transition font-medium"
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+      </div>
+
+      {/* TRUST BADGES + PAYMENT METHODS */}
+      <div className="border-t py-10">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+          
+          {/* Trust Badges */}
+          <div>
+            <h3 className="font-bold text-teal-600 mb-4 text-lg">Book with Confidence</h3>
+            <div className="flex flex-wrap gap-4">
+              {[
+                "/Images/footer1.jpg",
+                "/Images/footer2.jpg",
+                "/Images/footer3.svg",
+                "/Images/footer4.jpg",
+                "/Images/footer5.svg",
+                "/Images/footer6.svg",
+                "/Images/footer7.svg",
+                "/Images/footer8.png",
+              ].map((src) => (
+                <img key={src} src={src} className="h-14 rounded shadow-sm" />
+              ))}
+            </div>
+          </div>
+
+          {/* Payment Methods */}
+          <div>
+            <h3 className="font-bold text-lg text-teal-600 mb-4">Payment Methods</h3>
+            <div className="flex items-center gap-4">
+              {[
+                "/Images/payment1.png",
+                "/Images/payment2.png",
+                "/Images/payment3.png",
+                "/Images/payment4.png",
+                "/Images/payment5.png",
+              ].map((src) => (
+                <img key={src} src={src} className="h-10 rounded shadow-sm" />
+              ))}
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Divider Line + Bottom Text */}
-      <div className="relative z-10 mt-12 border-t border-gray-200 pt-6 text-center text-sm text-gray-500">
-        <p>
-          © {new Date().getFullYear()}{" "}
-          <span className="text-gray-800 font-semibold">Subhash Nigam</span>. All
-          rights reserved.
-        </p>
-        <p className="mt-2 text-xs text-gray-400">
-          Made with ❤️ & powered by{" "}
-          <span className="text-teal-500 font-semibold">React.js</span> +
-          <span className="text-teal-500 font-semibold"> Tailwind CSS</span>
+      {/* BOTTOM LINKS */}
+      <div className="border-t py-6 text-center text-sm">
+        <div className="flex flex-wrap justify-center gap-6 mb-4 font-medium">
+          {["Privacy Policy", "Cookies Policy", "Disclaimer", "Legal", "Sitemap"].map(
+            (item) => (
+              <span key={item} className="text-teal-600 transition font-bold">
+                {item}
+              </span>
+            )
+          )}
+        </div>
+
+        <p className="text-gray-500 font-medium">
+          © 2004–2025 <span className="text-teal-600" > Max Holidays</span> India Pvt. Ltd. All rights reserved.
         </p>
       </div>
     </footer>
