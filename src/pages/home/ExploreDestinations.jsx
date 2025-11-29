@@ -45,7 +45,7 @@ const ExploreDestinations = () => {
         </p>
 
         {/* HORIZONTAL SCROLLER */}
-        <div className="flex space-x-4 overflow-x-auto mt-10 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-amber-400 scrollbar-track-gray-700">
+        <div className="flex space-x-4 overflow-x-auto overflow-y-hidden mt-10 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-amber-400 scrollbar-track-gray-700">
           {destinations.map((item, index) => (
             <motion.div
               key={index}

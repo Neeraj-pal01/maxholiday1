@@ -103,7 +103,7 @@ export default function HomeSection() {
   return (
     <div className="">
       {/* ---------------- SLIDER ---------------- */}
-      <div className="relative hero-parallax top-0 w-full h-[350px] md:h-[110vh] overflow-hidden shadow-lg">
+      <div className="relative hero-parallax top-0 w-full h-[70vh] md:h-[110vh] overflow-hidden shadow-lg">
 
         {sliderImages.map((img, index) => (
           <motion.div
@@ -131,7 +131,7 @@ export default function HomeSection() {
         ></motion.div>
 
         {/* TEXT CONTENT */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center space-y-6 text-center px-4 z-20">
+        <div className="absolute inset-0 flex mt-10 md:mt-0 flex-col justify-center items-center space-y-6 text-center px-4 z-20">
           <motion.h1
             key={current}
             className="text-white text-3xl md:text-5xl font-bold drop-shadow-xl"
@@ -206,7 +206,7 @@ export default function HomeSection() {
 
 
       {/* ---------------- 4 CATEGORIES SECTION ---------------- */}
-      <div className="w-full flex justify-between relative -mt-20 z-30  items-center gap-4 px-4 md:px-10 flex-wrap md:flex-nowrap">
+      <div className="w-full flex justify-between relative mt-5 md:-mt-20 z-30  items-center gap-4 px-4 md:px-10 flex-wrap md:flex-nowrap">
         {bottomImages.map((item, i) => (
           <motion.div
             key={i}
