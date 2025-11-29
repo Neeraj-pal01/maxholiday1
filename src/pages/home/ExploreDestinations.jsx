@@ -1,5 +1,7 @@
 // ~~~{"id":"86214","variant":"standard","title":"Horizontal scroll ExploreDestinations"}
 import React from "react";
+import { motion } from "framer-motion";
+
 
 const destinations = [
   { name: "INDIA", img: "/Images/home26.avif" },
@@ -45,9 +47,13 @@ const ExploreDestinations = () => {
         {/* HORIZONTAL SCROLLER */}
         <div className="flex space-x-4 overflow-x-auto mt-10 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-amber-400 scrollbar-track-gray-700">
           {destinations.map((item, index) => (
-            <div
+            <motion.div
               key={index}
               className="flex-shrink-0 w-64 md:w-72 rounded-lg snap-center"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: true }}
             >
               {/* Image Box */}
               <div className="h-40 md:h-48 rounded-lg overflow-hidden relative group shadow-lg">
@@ -62,7 +68,7 @@ const ExploreDestinations = () => {
               <p className="text-center mt-2 text-amber-600 font-semibold text-lg tracking-wide">
                 {item.name}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
 

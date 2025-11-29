@@ -1,5 +1,7 @@
 import React from "react";
 import { MapPin, Scissors, Users } from "lucide-react";
+import { motion } from "framer-motion";
+
 
 const IncredibleIndiaTours = () => {
   const images = [
@@ -53,7 +55,12 @@ const IncredibleIndiaTours = () => {
       {/* 3 FEATURE BOXES */}
       <div className="grid md:grid-cols-3 gap-10 mt-16">
         {/* Box 1 */}
-        <div>
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
           <div className="flex items-center gap-3 mb-4">
             <MapPin className="w-7 h-7 text-amber-700" />
             <h3 className="text-xl font-semibold text-amber-700">
@@ -70,10 +77,15 @@ const IncredibleIndiaTours = () => {
           <a href="#" className="text-amber-600 font-semibold mt-3 inline-block">
             All India tour packages »
           </a>
-        </div>
+        </motion.div>
 
         {/* Box 2 */}
-        <div>
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
           <div className="flex items-center gap-3 mb-4">
             <Scissors className="w-7 h-7 text-amber-700" />
             <h3 className="text-xl font-semibold text-amber-700">
@@ -90,10 +102,15 @@ const IncredibleIndiaTours = () => {
           <a href="#" className="text-amber-600 font-semibold mt-3 inline-block">
             Get more travel ideas »
           </a>
-        </div>
+        </motion.div>
 
         {/* Box 3 */}
-        <div>
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
           <div className="flex items-center gap-3 mb-4">
             <Users className="w-7 h-7 text-amber-700" />
             <h3 className="text-xl font-semibold text-amber-700">
@@ -110,7 +127,7 @@ const IncredibleIndiaTours = () => {
           <a href="#" className="text-amber-600 font-semibold mt-3 inline-block">
             India group tours »
           </a>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

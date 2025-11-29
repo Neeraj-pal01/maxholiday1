@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white shadow-md border-b relative z-50">
+    <nav className="bg-tranparent absolute border-b-[2px] border-amber-400 top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
 
         {/* LOGO */}
@@ -19,12 +19,12 @@ export default function Navbar() {
           to="/"
           className="text-2xl font-bold text-amber-600 flex items-center transition-transform duration-300 hover:scale-105"
         >
-          Max <span className="text-black ml-1">Holidays</span>
+          Max <span className="text-white ml-1">Holidays</span>
         </Link>
 
         {/* RIGHT SIDE BUTTON (DESKTOP) */}
         <div className="hidden md:flex items-center gap-10">
-          <ul className="flex items-center gap-10 text-[#001248] font-semibold">
+          <ul className="flex items-center gap-10 text-[#001248 font-semibold">
 
             {/* DESTINATION */}
             <MenuItem
@@ -134,8 +134,6 @@ export default function Navbar() {
               </MegaMenu>
             </MenuItem>
 
-          
-
             {/* ABOUT */}
             <MenuItem
               name="ABOUT"
@@ -148,7 +146,6 @@ export default function Navbar() {
                   title="ABOUT COMPANY"
                   items={["Company Profile", "Our Founder", "Why Us", "Contact Us"]}
                 />
-
                 <MegaSection
                   title="MAX FOR YOU"
                   items={[
@@ -163,7 +160,7 @@ export default function Navbar() {
             </MenuItem>
 
             {/* REVIEWS */}
-            <li className="hover:text-amber-600 mr-10">
+            <li className="hover:text-amber-600 text-white mr-10">
               <Link to="/reviews">REVIEWS</Link>
             </li>
           </ul>
@@ -200,7 +197,7 @@ function MenuItem({ name, id, open, toggleMenu, children }) {
       onMouseEnter={() => toggleMenu(id)}
       onMouseLeave={() => toggleMenu(null)}
     >
-      <div className="flex items-center gap-1 hover:text-amber-600">
+      <div className="flex items-center gap-1 text-white hover:text-amber-600">
         {name} <FaChevronDown size={12} />
       </div>
 
