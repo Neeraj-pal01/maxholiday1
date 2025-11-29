@@ -11,7 +11,7 @@ const bottomImages = [
   {
     title: (
       <>
-        Taj Mahal Palace Mumbai <span className="text-teal-600">India</span>
+        Taj Mahal Palace Mumbai <span className="text-amber-600">India</span>
       </>
     ),
     desc: "The iconic luxury hotel located beside the Gateway of India in Mumbai.",
@@ -22,7 +22,7 @@ const bottomImages = [
      title: (
       <>
         Champaner Archaeological Park{" "}
-        <span className="text-teal-600">Gujarat</span>
+        <span className="text-amber-600">Gujarat</span>
       </>
     ),
     desc: "A stunning Baháʼí House of Worship known for its flower-like architecture.",
@@ -31,7 +31,7 @@ const bottomImages = [
   {
     title: (
       <>
-        India Gate New Delhi <span className="text-teal-600">India</span>
+        India Gate New Delhi <span className="text-amber-600">India</span>
       </>
     ),
     desc: "A UNESCO World Heritage Site famous for its monumental chariot design.",
@@ -40,7 +40,7 @@ const bottomImages = [
   {
     title: (
       <>
-        Hawa Mahal Jaipur <span className="text-teal-600">India</span>
+        Hawa Mahal Jaipur <span className="text-amber-600">India</span>
       </>
     ),
     desc: "The Palace of Winds, an iconic landmark in the heart of Jaipur.",
@@ -49,7 +49,7 @@ const bottomImages = [
   {
     title: (
       <>
-        Charminar, Hyderabad <span className="text-teal-600">India</span>
+        Charminar, Hyderabad <span className="text-amber-600">India</span>
       </>
     ),
     desc: "Charminar is the iconic symbol of Hyderabad, known for its stunning four minarets ",
@@ -62,7 +62,7 @@ const tripleImages = [
   {
     title: (
       <>
-        Lotus Temple Delhi <span className="text-teal-600">India</span>
+        Lotus Temple Delhi <span className="text-amber-600">India</span>
       </>
     ),
     desc: "A UNESCO heritage site known for its ancient mosques and historic structures.",
@@ -72,7 +72,7 @@ const tripleImages = [
     title: (
       <>
         Nainital Boat Lake View{" "}
-        <span className="text-teal-600">Uttarakhand</span>
+        <span className="text-amber-600">Uttarakhand</span>
       </>
     ),
     desc: "A peaceful lakeside destination famous for boating and mountain views.",
@@ -81,7 +81,7 @@ const tripleImages = [
   {
     title: (
       <>
-        Sanchi Stupa <span className="text-teal-600">Madhya Pradesh</span>
+        Sanchi Stupa <span className="text-amber-600">Madhya Pradesh</span>
       </>
     ),
     desc: "A war memorial and one of the most iconic landmarks of New Delhi.",
@@ -132,7 +132,7 @@ export default function HomeSection() {
       <section className="w-full bg-white text-black flex flex-col md:flex-row items-center justify-center px-6 md:px-20 py-16">
         {/* Left Video Circle */}
         <div className="flex justify-center md:w-1/2">
-          <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-teal-600 flex items-center justify-center">
+          <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-amber-600 flex items-center justify-center">
             <video
               src="/Images/home1.mp4"
               autoPlay
@@ -148,23 +148,23 @@ export default function HomeSection() {
         <div className="md:w-1/2 mt-10 md:mt-0 md:pl-12">
           <h1 className="text-3xl md:text-5xl font-bold leading-snug ">
             Welcome to{" "}
-            <span className="text-teal-600">Max Holidays India Pvt. Ltd.</span>
+            <span className="text-amber-600">Max Holidays India Pvt. Ltd.</span>
           </h1>
 
-          <h2 className="text-teal-600 text-3xl md:text-4xl font-semibold mt-4">
+          <h2 className="text-amber-600 text-3xl md:text-4xl font-semibold mt-4">
             Tour & Family Packages
           </h2>
 
           <p className="text-black text-lg mt-6 leading-relaxed text-justify">
-            Explore inctealible India with our premium holiday packages
-            tailoteal for families, couples, and group travellers. Enjoy
+            Explore incamberible India with our premium holiday packages
+            tailoamber for families, couples, and group travellers. Enjoy
             seamless travel planning, comfortable stays, and unforgettable
             experiences with Max Holidays India Pvt. Ltd.
           </p>
 
           <p className="text-black text-lg mt-3 leading-relaxed">
             Let’s begin your journey of{" "}
-            <span className="text-teal-500 font-semibold">
+            <span className="text-amber-500 font-semibold">
               memorable travel experiences
             </span>{" "}
             together!
@@ -217,21 +217,21 @@ export default function HomeSection() {
 
       {/* paragraph  */}
       <p className="text-lg leading-relaxed text-gray-700 text-justify">
-        <span className="text-teal-500 font-semibold">
+        <span className="text-amber-500 font-semibold">
           Max Holidays India Pvt. Ltd.
         </span>
         is one of India's leading travel experts, offering beautifully planned
         tours across famous cities, heritage sites, beaches, and hill stations.
         With carefully curated{" "}
-        <span className="text-teal-500 font-semibold">family packages</span>, we
+        <span className="text-amber-500 font-semibold">family packages</span>, we
         make every journey comfortable, safe, and memorable. Our team ensures
         smooth hotel stays, guided sightseeing, and seamless transportation. At
-        <span className="text-teal-500 font-semibold">
+        <span className="text-amber-500 font-semibold">
           Max Holidays India Pvt. Ltd.
         </span>
         , we believe in delivering joy-filled travel experiences that bring
         families closer. Start your next adventure with our perfectly designed
-        <span className="text-teal-500 font-semibold">tour packages</span>{" "}
+        <span className="text-amber-500 font-semibold">tour packages</span>{" "}
         today!
       </p>
 

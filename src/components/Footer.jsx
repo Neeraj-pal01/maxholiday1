@@ -20,7 +20,7 @@ export default function Footer() {
           <img src="/logo.png" alt="Max Holidays" className="w-40 mb-4" />
 
           <p className="text-sm leading-6 text-gray-600">
-            <strong className="text-teal-600 font-bold text-md">Max Holidays India Pvt. Ltd.</strong>
+            <strong className="text-amber-600 font-bold text-md">Max Holidays India Pvt. Ltd.</strong>
             <br />
             301, HB Twin Tower,
             <br />
@@ -30,15 +30,15 @@ export default function Footer() {
           </p>
 
           <p className="mt-4 text-sm leading-6 text-gray-600">
-            <span className="font-bold text-teal-600">Landline :</span> 011 45026500
+            <span className="font-bold text-amber-600">Landline :</span> 011 45026500
             <br />
-            <span className="font-bold text-teal-600">Whatsapp :</span> +91 8800740030
+            <span className="font-bold text-amber-600">Whatsapp :</span> +91 8800740030
             <br />
-            <span className="font-bold text-teal-600">Email :</span> tours@maxholidays.com
+            <span className="font-bold text-amber-600">Email :</span> tours@maxholidays.com
             <br />
-            <span className="font-bold text-teal-600">Support :</span> support@maxholidays.com
+            <span className="font-bold text-amber-600">Support :</span> support@maxholidays.com
             <br />
-            <span className="font-bold text-teal-600">Skype :</span> max.holidays
+            <span className="font-bold text-amber-600">Skype :</span> max.holidays
           </p>
 
           {/* Social icons */}
@@ -58,7 +58,7 @@ export default function Footer() {
 
         {/* Company Links */}
         <div>
-          <h3 className="font-bold text-xl mb-4 text-teal-600">Company</h3>
+          <h3 className="font-bold text-xl mb-4 text-amber-600">Company</h3>
           <ul className="space-y-2 text-sm">
             {[
               ["About Us", "/about"],
@@ -73,7 +73,7 @@ export default function Footer() {
               <li key={link}>
                 <Link
                   to={link}
-                  className="hover:text-teal-600 transition font-medium"
+                  className="hover:text-amber-600 transition font-medium"
                 >
                   {label}
                 </Link>
@@ -84,7 +84,7 @@ export default function Footer() {
 
         {/* Services */}
         <div>
-          <h3 className="font-bold text-xl mb-4 text-teal-600">Services</h3>
+          <h3 className="font-bold text-xl mb-4 text-amber-600">Services</h3>
           <ul className="space-y-2 text-sm">
             {[
               ["India Travel Guide", "/india-travel-guide"],
@@ -100,7 +100,7 @@ export default function Footer() {
               <li key={link}>
                 <Link
                   to={link}
-                  className="hover:text-teal-600 transition font-medium"
+                  className="hover:text-amber-600 transition font-medium"
                 >
                   {label}
                 </Link>
@@ -111,7 +111,7 @@ export default function Footer() {
 
         {/* Max For You */}
         <div>
-          <h3 className="font-bold text-xl mb-4 text-teal-600">Max For You</h3>
+          <h3 className="font-bold text-xl mb-4 text-amber-600">Max For You</h3>
           <ul className="space-y-2 text-sm">
             {[
               ["FAQs", "/faqs"],
@@ -126,7 +126,7 @@ export default function Footer() {
               <li key={link}>
                 <Link
                   to={link}
-                  className="hover:text-teal-600 transition font-medium"
+                  className="hover:text-amber-600 transition font-medium"
                 >
                   {label}
                 </Link>
@@ -143,7 +143,7 @@ export default function Footer() {
           
           {/* Trust Badges */}
           <div>
-            <h3 className="font-bold text-teal-600 mb-4 text-lg">Book with Confidence</h3>
+            <h3 className="font-bold text-amber-600 mb-4 text-lg">Book with Confidence</h3>
             <div className="flex flex-wrap gap-4">
               {[
                 "/Images/footer1.jpg",
@@ -162,7 +162,7 @@ export default function Footer() {
 
           {/* Payment Methods */}
           <div>
-            <h3 className="font-bold text-lg text-teal-600 mb-4">Payment Methods</h3>
+            <h3 className="font-bold text-lg text-amber-600 mb-4">Payment Methods</h3>
             <div className="flex items-center gap-4">
               {[
                 "/Images/payment1.png",
@@ -183,7 +183,7 @@ export default function Footer() {
         <div className="flex flex-wrap justify-center gap-6 mb-4 font-medium">
           {["Privacy Policy", "Cookies Policy", "Disclaimer", "Legal", "Sitemap"].map(
             (item) => (
-              <span key={item} className="text-teal-600 transition font-bold">
+              <span key={item} className="text-amber-600 transition font-bold">
                 {item}
               </span>
             )
@@ -191,7 +191,7 @@ export default function Footer() {
         </div>
 
         <p className="text-gray-500 font-medium">
-          © 2004–2025 <span className="text-teal-600" > Max Holidays</span> India Pvt. Ltd. All rights reserved.
+          © 2004–2025 <span className="text-amber-600" > Max Holidays</span> India Pvt. Ltd. All rights reserved.
         </p>
       </div>
     </footer>

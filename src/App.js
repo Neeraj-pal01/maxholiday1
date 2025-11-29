@@ -41,7 +41,6 @@ const App = () => {
           <Route path="myjobs" element={<MyJob />} />
           <Route path="mycourses" element={<MyCourse />} />
         </Route>
-
       </Routes>
         <Top />
       <Footer />

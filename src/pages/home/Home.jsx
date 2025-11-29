@@ -10,7 +10,6 @@ const Home = () => {
     <HomeSection/>
     <IncredibleIndiaTours/>
     <ExploreDestinations/>
-   
     </div>
   );
 }

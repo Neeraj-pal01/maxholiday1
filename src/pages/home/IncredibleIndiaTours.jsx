@@ -17,11 +17,11 @@ const IncredibleIndiaTours = () => {
       }}
     >
       {/* TEXT CONTENT TOP */}
-      <h2 className="text-4xl md:text-5xl font-bold text-center text-teal-600">
+      <h2 className="text-4xl md:text-5xl font-bold text-center text-amber-600">
         Incredible India Tours
       </h2>
 
-      <div className="w-24 h-1 bg-teal-200 mx-auto mt-4 mb-8"></div>
+      <div className="w-24 h-1 bg-amber-200 mx-auto mt-4 mb-8"></div>
 
       <p className="text-center text-lg text-black leading-relaxed max-w-4xl mx-auto">
         When you think about travelling to India, the first thing which comes in
@@ -32,7 +32,7 @@ const IncredibleIndiaTours = () => {
       <div className="text-center mt-3">
         <a
           href="#"
-          className="text-teal-600 font-semibold hover:underline text-lg"
+          className="text-amber-600 font-semibold hover:underline text-lg"
         >
           [ View Tours .. ]
         </a>
@@ -55,8 +55,8 @@ const IncredibleIndiaTours = () => {
         {/* Box 1 */}
         <div>
           <div className="flex items-center gap-3 mb-4">
-            <MapPin className="w-7 h-7 text-teal-700" />
-            <h3 className="text-xl font-semibold text-teal-700">
+            <MapPin className="w-7 h-7 text-amber-700" />
+            <h3 className="text-xl font-semibold text-amber-700">
               500+ Tours Packages
             </h3>
           </div>
@@ -67,7 +67,7 @@ const IncredibleIndiaTours = () => {
             package from the list & write to us for price quotations, bookings
             or any alterations. We love to work for you
           </p>
-          <a href="#" className="text-teal-600 font-semibold mt-3 inline-block">
+          <a href="#" className="text-amber-600 font-semibold mt-3 inline-block">
             All India tour packages »
           </a>
         </div>
@@ -75,8 +75,8 @@ const IncredibleIndiaTours = () => {
         {/* Box 2 */}
         <div>
           <div className="flex items-center gap-3 mb-4">
-            <Scissors className="w-7 h-7 text-teal-700" />
-            <h3 className="text-xl font-semibold text-teal-700">
+            <Scissors className="w-7 h-7 text-amber-700" />
+            <h3 className="text-xl font-semibold text-amber-700">
               On Demand Customisation
             </h3>
           </div>
@@ -87,7 +87,7 @@ const IncredibleIndiaTours = () => {
             interest with us and stay relaxed when we design your perfect tour
             to India or its neighbouring countries.
           </p>
-          <a href="#" className="text-teal-600 font-semibold mt-3 inline-block">
+          <a href="#" className="text-amber-600 font-semibold mt-3 inline-block">
             Get more travel ideas »
           </a>
         </div>
@@ -95,8 +95,8 @@ const IncredibleIndiaTours = () => {
         {/* Box 3 */}
         <div>
           <div className="flex items-center gap-3 mb-4">
-            <Users className="w-7 h-7 text-teal-700" />
-            <h3 className="text-xl font-semibold text-teal-700">
+            <Users className="w-7 h-7 text-amber-700" />
+            <h3 className="text-xl font-semibold text-amber-700">
               20 Years of Excellence
             </h3>
           </div>
@@ -107,7 +107,7 @@ const IncredibleIndiaTours = () => {
             information and guidance. one of the top travel experiences followed
             by everlasting memories
           </p>
-          <a href="#" className="text-teal-600 font-semibold mt-3 inline-block">
+          <a href="#" className="text-amber-600 font-semibold mt-3 inline-block">
             India group tours »
           </a>
         </div>

@@ -17,7 +17,7 @@ export default function Navbar() {
         {/* LOGO */}
         <Link
           to="/"
-          className="text-2xl font-bold text-teal-600 flex items-center transition-transform duration-300 hover:scale-105"
+          className="text-2xl font-bold text-amber-600 flex items-center transition-transform duration-300 hover:scale-105"
         >
           Max <span className="text-black ml-1">Holidays</span>
         </Link>
@@ -163,7 +163,7 @@ export default function Navbar() {
             </MenuItem>
 
             {/* REVIEWS */}
-            <li className="hover:text-teal-600 mr-10">
+            <li className="hover:text-amber-600 mr-10">
               <Link to="/reviews">REVIEWS</Link>
             </li>
           </ul>
@@ -171,7 +171,7 @@ export default function Navbar() {
           {/* ASK A QUESTION BUTTON */}
           <Link
             to="/contact"
-            className="bg-teal-600 hover:bg-teal-900 text-white font-semibold px-8 py-3 rounded-full transition-all"
+            className="bg-amber-600 hover:bg-amber-900 text-white font-semibold px-8 py-3 rounded-full transition-all"
           >
             ASK A QUESTION
           </Link>
@@ -200,7 +200,7 @@ function MenuItem({ name, id, open, toggleMenu, children }) {
       onMouseEnter={() => toggleMenu(id)}
       onMouseLeave={() => toggleMenu(null)}
     >
-      <div className="flex items-center gap-1 hover:text-teal-600">
+      <div className="flex items-center gap-1 hover:text-amber-600">
         {name} <FaChevronDown size={12} />
       </div>
 
@@ -228,15 +228,15 @@ function MegaMenu({ children, size }) {
 function MegaSection({ title, items }) {
   return (
     <div>
-      <h4 className="font-semibold text-teal-600 mb-3">{title}</h4>
+      <h4 className="font-semibold text-amber-600 mb-3">{title}</h4>
       <ul className="space-y-2 text-sm">
         {items.map((item) => (
-          <li key={item} className="hover:text-teal-600">
+          <li key={item} className="hover:text-amber-600">
             <Link to="/">{item}</Link>
           </li>
         ))}
       </ul>
-      <Link className="text-teal-600 mt-2 inline-block font-semibold text-sm">
+      <Link className="text-amber-600 mt-2 inline-block font-semibold text-sm">
         View All »
       </Link>
     </div>

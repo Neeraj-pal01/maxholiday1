@@ -18,10 +18,10 @@ const ExploreDestinations = () => {
     <div className=" py-16 px-5">
       <div className="max-w-7xl mx-auto">
         {/* HEADING */}
-        <h2 className="text-4xl font-bold text-teal-600 text-center">
+        <h2 className="text-4xl font-bold text-amber-600 text-center">
           Explore Our Destinations
         </h2>
-        <div className="w-24 h-1 bg-teal-300 mt-3 mb-6 mx-auto"></div>
+        <div className="w-24 h-1 bg-amber-300 mt-3 mb-6 mx-auto"></div>
 
         {/* TEXT */}
         <p className=" leading-relaxed text-[17px] text-center max-w-3xl mx-auto mb-8 text-justify">
@@ -43,7 +43,7 @@ const ExploreDestinations = () => {
         </p>
 
         {/* HORIZONTAL SCROLLER */}
-        <div className="flex space-x-4 overflow-x-auto mt-10 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-teal-400 scrollbar-track-gray-700">
+        <div className="flex space-x-4 overflow-x-auto mt-10 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-amber-400 scrollbar-track-gray-700">
           {destinations.map((item, index) => (
             <div
               key={index}
@@ -59,7 +59,7 @@ const ExploreDestinations = () => {
               </div>
 
               {/* Name Below Image */}
-              <p className="text-center mt-2 text-teal-600 font-semibold text-lg tracking-wide">
+              <p className="text-center mt-2 text-amber-600 font-semibold text-lg tracking-wide">
                 {item.name}
               </p>
             </div>
@@ -69,7 +69,7 @@ const ExploreDestinations = () => {
         <div className="text-center mt-4">
           <a
             href="#"
-            className="text-teal-400 font-semibold text-lg hover:underline"
+            className="text-amber-400 font-semibold text-lg hover:underline"
           >
             [ view all destinations ]
           </a>

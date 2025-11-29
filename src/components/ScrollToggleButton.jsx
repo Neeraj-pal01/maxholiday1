@@ -19,7 +19,6 @@ const ScrollToggleButton = () => {
       behavior: "smooth",
     });
   };
-
   return (
     <button
       onClick={handleClick}
