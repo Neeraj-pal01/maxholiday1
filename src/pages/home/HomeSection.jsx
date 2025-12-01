@@ -103,7 +103,7 @@ export default function HomeSection() {
   return (
     <div className="">
       {/* ---------------- SLIDER ---------------- */}
-      <div className="relative hero-parallax top-0 w-full h-[70vh] md:h-[110vh] overflow-hidden shadow-lg">
+      <div className="relative hero-parallax top-0 w-full h-[75vh] md:h-[110vh] overflow-hidden shadow-lg">
 
         {sliderImages.map((img, index) => (
           <motion.div
@@ -254,7 +254,7 @@ export default function HomeSection() {
         <div className="flex justify-center md:w-1/2">
           <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-amber-600 flex items-center justify-center">
             <video
-              src="/Images/home1.mp4"
+              src="/Images/home1TMerged.mp4"
               autoPlay
               loop
               muted

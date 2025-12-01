@@ -15,6 +15,7 @@ import MyProfile from './pages/user/Myrpofile';
 import MyCourse from './pages/user/MyCourse';
 import MyJob from './pages/user/MyJob';
 import Header from './components/Header';
+import Booking from './pages/home/Booking';
 
 
 
@@ -40,6 +41,7 @@ const App = () => {
           <Route path="myprofile" element={<MyProfile />} />
           <Route path="myjobs" element={<MyJob />} />
           <Route path="mycourses" element={<MyCourse />} />
+          <Route path="booking" element={<Booking />} />
         </Route>
       </Routes>
         <Top />

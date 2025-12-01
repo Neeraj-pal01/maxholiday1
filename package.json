@@ -8,6 +8,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@reduxjs/toolkit": "^2.3.0",
+    "@tailwindcss/vite": "^4.1.17",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -37,6 +38,7 @@
     "sweetalert2": "^11.14.3",
     "sweetalert2-react-content": "^5.0.7",
     "swiper": "^12.0.1",
+    "tailwindcss": "^4.1.17",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

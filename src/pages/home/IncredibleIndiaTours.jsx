@@ -1,16 +1,37 @@
 import React from "react";
 import { MapPin, Scissors, Users } from "lucide-react";
 import { motion } from "framer-motion";
+import { useRef, useEffect } from "react";
 
 
 const IncredibleIndiaTours = () => {
   const images = [
+    "/Images/home1.avif",
     "/Images/home14.avif",
     "/Images/home15.avif",
     "/Images/home17.avif",
-    "/Images/home16.avif",
+    "/Images/home18.avif",
+    "/Images/home19.avif",
+    "/Images/home20.avif",
   ];
+   const scrollRef = useRef(null);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (scrollRef.current) {
+        const scrollWidth = scrollRef.current.scrollWidth;
+        const clientWidth = scrollRef.current.clientWidth;
+        // Scroll by one image width
+        const scrollStep = 350 + 20; // image width + gap
+        if (scrollRef.current.scrollLeft + clientWidth >= scrollWidth) {
+          scrollRef.current.scrollTo({ left: 0, behavior: "smooth" });
+        } else {
+          scrollRef.current.scrollBy({ left: scrollStep, behavior: "smooth" });
+        }
+      }
+    }, 3000); // every 3 seconds
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div
       className="mx-auto px-4 py-16 rounded-xl"
@@ -41,13 +62,13 @@ const IncredibleIndiaTours = () => {
       </div>
 
       {/* 📸 IMAGE SCROLLER */}
-      <div className="mt-10 overflow-x-auto flex gap-5 py-4 scrollbar-hide">
+      <div ref={scrollRef} className="mt-10 overflow-x-hidden flex gap-5 py-4 scrollbar-hide">
         {images.map((img, i) => (
           <img
             key={i}
             src={img}
             alt="tour"
-            className="w-[350px] h-[220px] object-cover rounded-xl shadow-md flex-shrink-0"
+            className="w-[350px] h-[220px] hover:scale-105 transition object-cover rounded-xl shadow-md flex-shrink-0"
           />
         ))}
       </div>
